@@ -3,6 +3,10 @@ This is a basic helper for using laravel controllers as proxy servers.
 It allows you to forward exact requests to another server and return their response. 
 Supports all methods, and also files.
 
+# Required
+This helper require Laravel 7 or later.
+If you need a lower version, just replace the http client with Guzzle.
+
 ## What it does
 
 Its main function is to make requests from one point to another using laravel as a proxy.
