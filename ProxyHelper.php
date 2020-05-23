@@ -128,6 +128,8 @@ class ProxyHelper {
     }
 
     private function call(PendingRequest $request, $method, $url, $params){
+        if($this->customMethod)
+            $method = $this->customMethod;
         switch ($method) {
             case 'GET':
                 return $request->get($url, $params);
